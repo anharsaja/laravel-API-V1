@@ -49,7 +49,7 @@ Route::get('/setup', function() {
             return [
                 'admin' => $adminToken->plainTextToken,
                 'update' => $updateToken->plainTextToken,
-                'delete' => $basicToken->plainTextToken
+                'basic' => $basicToken->plainTextToken
             ];
         }
     }
